@@ -1,0 +1,138 @@
+.about {
+  padding: 4rem 8rem;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.about-text h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, #9845e8 0%, #33d2ff 50%, #dd5789 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-text h3 {
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem 0;
+  color: var(--highlight);
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+.skills {
+  margin-top: 2rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.skill {
+  background: rgba(108, 172, 228, 0.1);
+  border: 1px solid var(--highlight);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.skill:hover {
+  background: var(--highlight);
+  color: var(--bg-dark);
+  transform: translateY(-2px);
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-placeholder {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(152, 69, 232, 0.2) 0%, rgba(51, 210, 255, 0.2) 50%, rgba(221, 87, 137, 0.2) 100%);
+  border: 2px solid var(--highlight);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  transition: all 0.3s ease;
+}
+
+.image-placeholder:hover {
+  transform: rotate(5deg) scale(1.05);
+  box-shadow: 0 10px 30px rgba(108, 172, 228, 0.3);
+}
+
+@media (max-width: 1024px) {
+  .about {
+    padding: 3rem 4rem;
+  }
+  
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+  
+  .about-text h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 2rem;
+  }
+  
+  .about-text h2 {
+    font-size: 2rem;
+  }
+  
+  .about-text h3 {
+    font-size: 1.3rem;
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+  
+  .image-placeholder {
+    width: 200px;
+    height: 200px;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 1.5rem 1rem;
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
