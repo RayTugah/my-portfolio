@@ -19,7 +19,7 @@ export const changeText = () => {
 
 export const Navbar = () => `
 <nav>
-<img src="./public/fondo.png" alt="fondo" class="fondo"/>
+<img src="./fondo.png" alt="fondo" class="fondo"/>
 <h2>RayhDev</h2>
 <ul>
     <li>
