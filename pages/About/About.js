@@ -34,11 +34,7 @@ export const About = () => {
           </div>
         </div>
         
-        <div class="about-image">
-          <div class="image-placeholder">
-            <span>👨‍💻</span>
-          </div>
-        </div>
+
       </div>
     </section>`;
 };
